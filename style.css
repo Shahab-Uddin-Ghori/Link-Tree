@@ -1,0 +1,118 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 500vh;
+  background: rgb(97, 204, 255);
+  background: linear-gradient(
+    159deg,
+    rgba(97, 204, 255, 1) 0%,
+    rgb(148, 255, 255) 47%,
+    rgb(212, 255, 227) 90%
+  );
+  animation: body 1s linear;
+}
+.side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side img {
+  width: 70%;
+}
+@keyframes body {
+  to {
+    background: rgb(97, 204, 255);
+    background: linear-gradient(
+      159deg,
+      rgba(97, 204, 255, 1) 0%,
+      rgb(148, 255, 255) 47%,
+      rgb(212, 255, 227) 90%
+    );
+  }
+}
+
+.progress {
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 1s linear;
+}
+@keyframes progress {
+  to {
+    background: rgb(97, 204, 255);
+    background: linear-gradient(
+      159deg,
+      rgba(97, 204, 255, 1) 0%,
+      rgb(148, 255, 255) 47%,
+      rgb(212, 255, 227) 90%
+    );
+    width: 100%;
+  }
+}
+
+.cube-wrap {
+  --size: 30vmin;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  perspective: 100vmin;
+}
+.cube {
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+  animation: cube 1s linear;
+}
+@keyframes cube {
+  to {
+    transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+  }
+}
+
+.side {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background-color: #eee;
+  backface-visibility: visible;
+  top: calc(var(--size) * -0.5);
+  left: calc(var(--size) * -0.5);
+}
+.top {
+  background-color: #fff;
+  transform: rotateX(90deg) translateZ(calc(var(--size) * 0.5));
+}
+.bottom {
+  background-color: #999;
+  transform: rotateX(90deg) translateZ(calc(var(--size) * -0.5));
+}
+.left {
+  background-color: #ccc;
+  transform: rotateY(90deg) translateZ(calc(var(--size) * 0.5));
+}
+.right {
+  background-color: #ddd;
+  transform: rotateY(90deg) translateZ(calc(var(--size) * -0.5));
+}
+.front {
+  background-color: #aaa;
+  transform: translateZ(calc(var(--size) * 0.5));
+}
+.back {
+  background-color: #bbb;
+  transform: translateZ(calc(var(--size) * -0.5));
+}
+
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
