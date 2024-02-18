@@ -2,30 +2,19 @@ body {
   padding: 0;
   margin: 0;
   min-height: 500vh;
-  background: rgb(97, 204, 255);
   background: linear-gradient(
     159deg,
-    rgba(97, 204, 255, 1) 0%,
-    rgb(148, 255, 255) 47%,
+    rgb(165, 255, 236) 0%,
     rgb(212, 255, 227) 90%
   );
   animation: body 1s linear;
 }
-.side {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.side img {
-  width: 70%;
-}
+
 @keyframes body {
   to {
-    background: rgb(97, 204, 255);
     background: linear-gradient(
       159deg,
-      rgba(97, 204, 255, 1) 0%,
-      rgb(148, 255, 255) 47%,
+      rgb(165, 255, 236) 0%,
       rgb(212, 255, 227) 90%
     );
   }
@@ -74,6 +63,9 @@ body {
 }
 
 .side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: var(--size);
   height: var(--size);
@@ -82,29 +74,48 @@ body {
   top: calc(var(--size) * -0.5);
   left: calc(var(--size) * -0.5);
 }
+.side i {
+  font-size: 8rem;
+}
 .top {
-  background-color: #fff;
   transform: rotateX(90deg) translateZ(calc(var(--size) * 0.5));
+  /* background: rgb(53, 191, 255); */
+  background: transparent;
+}
+.top i:hover {
+    transform: scale(1.3);
+}.top i {
+  transition: .5s ease-in-out;
 }
 .bottom {
-  background-color: #999;
   transform: rotateX(90deg) translateZ(calc(var(--size) * -0.5));
+  /* background: rgb(53, 191, 255); */
+  background: transparent;
 }
 .left {
-  background-color: #ccc;
   transform: rotateY(90deg) translateZ(calc(var(--size) * 0.5));
+  /* background: rgb(53, 191, 255); */
+  background: transparent;
 }
 .right {
-  background-color: #ddd;
   transform: rotateY(90deg) translateZ(calc(var(--size) * -0.5));
+  /* background: rgb(53, 191, 255); */
+  background: transparent;
 }
 .front {
-  background-color: #aaa;
   transform: translateZ(calc(var(--size) * 0.5));
+  /* background: rgb(53, 191, 255); */
+  background: transparent;
 }
 .back {
-  background-color: #bbb;
   transform: translateZ(calc(var(--size) * -0.5));
+  /* background: rgb(53, 191, 255); */
+  background: transparent;
+}
+
+* {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 :root * {
@@ -115,4 +126,30 @@ body {
   /* These last 2 properites clean up overshoot weirdness */
   animation-iteration-count: 1;
   animation-fill-mode: both;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  /* width: 100%; */
+  background-color: red;
+  width: 100%;
+}
+.linktree-logo img {
+  width: 10rem;
+  background-color: yellow;
+}
+.linktree-login-singup {
+  /* display: flex; */
+  gap: 1rem;
+}
+.linktree-login-singup a {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.navbar h1 {
+  background-color: darkblue;
 }
