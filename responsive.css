@@ -3,5 +3,39 @@
         width: 8rem;
         background-color: palevioletred;
       }
-      
+      .side i {
+        font-size: 9rem;
+      }
+      .socail-links i{
+        font-size: 2rem;
+        }
+}
+@media screen and (max-width:600px) {
+    .linktree-logo img {
+        width: 3rem;
+        background-color: palevioletred;
+        margin-left: -1rem;
+      }
+      .side i {
+        font-size: 6.5rem;
+  /* background-color: red; */
+    }
+    
+    .socail-links i{
+        font-size: 1.5rem;
+        }
+    .socail-links h3{
+        font-size: 0.8rem;
+    }
+    .myname{
+        font-size: 1rem;
+    }
+    .myname{
+        margin-right: 1rem;
+    }
+}
+@media screen and (max-width:320px) {
+      .side i {
+        font-size: 5rem;
+      }
 }
