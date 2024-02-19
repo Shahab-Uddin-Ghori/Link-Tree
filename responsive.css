@@ -1,7 +1,7 @@
 @media screen and (max-width:1080px) {
     .linktree-logo img {
         width: 8rem;
-        background-color: palevioletred;
+        /* background-color: palevioletred; */
       }
       .side i {
         font-size: 9rem;
@@ -12,8 +12,8 @@
 }
 @media screen and (max-width:600px) {
     .linktree-logo img {
-        width: 3rem;
-        background-color: palevioletred;
+        width: 6rem;
+        /* background-color: palevioletred; */
         margin-left: -1rem;
       }
       .side i {
