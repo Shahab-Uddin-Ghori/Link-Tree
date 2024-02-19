@@ -4,8 +4,8 @@ body {
   min-height: 500vh;
   background: linear-gradient(
     159deg,
-    rgb(165, 255, 236) 0%,
-    rgb(212, 255, 227) 90%
+    rgb(102, 255, 222) 0%,
+    rgb(102, 255, 227) 100%
   );
   animation: body 1s linear;
 }
@@ -14,8 +14,8 @@ body {
   to {
     background: linear-gradient(
       159deg,
-      rgb(165, 255, 236) 0%,
-      rgb(212, 255, 227) 90%
+      rgb(81, 206, 238) 0%,
+      rgb(145, 237, 255) 100%
     );
   }
 }
@@ -82,11 +82,6 @@ body {
   /* background: rgb(53, 191, 255); */
   background: transparent;
 }
-.top i:hover {
-    transform: scale(1.3);
-}.top i {
-  transition: .5s ease-in-out;
-}
 .bottom {
   transform: rotateX(90deg) translateZ(calc(var(--size) * -0.5));
   /* background: rgb(53, 191, 255); */
@@ -112,7 +107,22 @@ body {
   /* background: rgb(53, 191, 255); */
   background: transparent;
 }
-
+.top i,
+.bottom i,
+.left i,
+.right i,
+.back i,
+.front i{
+    transition: .5s ease-in-out;
+}
+.top i:hover,
+.right i:hover,
+.left i:hover,
+.bottom i:hover,
+.back i:hover,
+.front i:hover {
+    transform: scale(1.3);
+}
 * {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -153,3 +163,27 @@ body {
 .navbar h1 {
   background-color: darkblue;
 }
+.social-links-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    position: fixed;
+    top: 8rem;
+    left: 2rem;
+    background-color: red;
+}
+.socail-links i{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    }
+.socail-links h3{
+    color: #202124;
+    font-size: 1rem;
+}
+
