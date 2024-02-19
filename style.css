@@ -15,7 +15,7 @@ body {
     background: linear-gradient(
       159deg,
       rgb(81, 206, 238) 0%,
-      rgb(145, 237, 255) 100%
+      rgb(148, 237, 255) 100%
     );
   }
 }
@@ -35,8 +35,7 @@ body {
     background: linear-gradient(
       159deg,
       rgba(97, 204, 255, 1) 0%,
-      rgb(148, 255, 255) 47%,
-      rgb(212, 255, 227) 90%
+      rgb(148, 255, 255) 100%,
     );
     width: 100%;
   }
