@@ -2,7 +2,8 @@ body {
   padding: 0;
   margin: 0;
   min-height: 500vh;
-  background-image: url(./img/robot-earth.jpg);
+  background-image: url(./img/robot-relaxing-laptop.jpg);
+
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +17,7 @@ body {
 
 @keyframes body {
   to {
-    background-image: url(./img/robot-earth.jpg);
+    background-image: url(./img/robot-relaxing-laptop.jpg); 
   }
 }
 
@@ -78,33 +79,33 @@ body {
 }
 .top {
   transform: rotateX(90deg) translateZ(calc(var(--size) * 0.5));
-  /* background: rgb(53, 191, 255); */
   background: transparent;
+  background: rgb(53, 191, 255);
 }
 .bottom {
   transform: rotateX(90deg) translateZ(calc(var(--size) * -0.5));
-  /* background: rgb(53, 191, 255); */
   background: transparent;
+  background: rgb(53, 191, 255);
 }
 .left {
   transform: rotateY(90deg) translateZ(calc(var(--size) * 0.5));
-  /* background: rgb(53, 191, 255); */
   background: transparent;
+  background: rgb(53, 191, 255);
 }
 .right {
   transform: rotateY(90deg) translateZ(calc(var(--size) * -0.5));
-  /* background: rgb(53, 191, 255); */
   background: transparent;
+  background: rgb(53, 191, 255);
 }
 .front {
   transform: translateZ(calc(var(--size) * 0.5));
-  /* background: rgb(53, 191, 255); */
   background: transparent;
+  background: rgb(53, 191, 255);
 }
 .back {
   transform: translateZ(calc(var(--size) * -0.5));
-  /* background: rgb(53, 191, 255); */
   background: transparent;
+  background: rgb(53, 191, 255);
 }
 .top i,
 .bottom i,
@@ -143,6 +144,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+  gap: 1rem;
   /* width: 100%; */
   /* background-color: red; */
   width: 100%;
@@ -151,10 +153,14 @@ body {
   width: 10rem;
   /* background-color: yellow; */
 }
-.linktree-login-singup {
-  /* display: flex; */
-  gap: 1rem;
-}
+.navbar h1{
+  background-color: #ffffff74;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #ffff;
+  box-shadow: 0 .5rem 2rem #2021247f;
+  }
+
 .linktree-login-singup a {
   font-weight: 600;
   font-size: 1rem;
@@ -186,4 +192,5 @@ body {
 .myname {
   color: #202124;
   font-weight: 800;
+  margin-right: 12rem;
 }
