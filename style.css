@@ -2,21 +2,22 @@ body {
   padding: 0;
   margin: 0;
   min-height: 500vh;
-  background: linear-gradient(
+  background-image: url(./img/the-15-most-popular-ai-tools-in-2023.webp);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background: linear-gradient(
     159deg,
     rgb(102, 255, 222) 0%,
     rgb(102, 255, 227) 100%
-  );
+  ); */
   animation: body 1s linear;
 }
 
 @keyframes body {
   to {
-    background: linear-gradient(
-      159deg,
-      rgb(81, 206, 238) 0%,
-      rgb(148, 237, 255) 100%
-    );
+    background-image: url(./img/the-15-most-popular-ai-tools-in-2023.webp);
+
   }
 }
 
